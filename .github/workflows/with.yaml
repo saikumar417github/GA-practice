@@ -1,0 +1,13 @@
+name: file operations
+
+on: workflow_dispatch
+
+jobs:
+  files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout the repo
+      run: actions/checkout@v5
+    - name: display the content of a file
+      run: cat devops.txt
