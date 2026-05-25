@@ -10,8 +10,7 @@ jobs:
     - name: checkout the repo
       uses: actions/checkout@v5
     - name: display the content of a file
-      run: cat devops.sh
-    - name: execute permission
-      run: chmod u+x devops.sh
-    - name: execute script
-      run: sh devops.sh
+      run: | 
+        cat devops.sh
+        chmod u+x devops.sh
+        sh devops.sh
