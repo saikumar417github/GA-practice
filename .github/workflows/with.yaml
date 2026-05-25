@@ -8,6 +8,6 @@ jobs:
 
     steps:
     - name: checkout the repo
-      run: actions/checkout@v5
+      uses: actions/checkout@v5
     - name: display the content of a file
       run: cat devops.txt
